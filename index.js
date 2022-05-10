@@ -26,6 +26,9 @@ app.use(userRoutes);
 const offerRoutes = require("./Routes/offer");
 app.use(offerRoutes);
 
+const paymentRoutes = require("./Routes/payment");
+app.use(paymentRoutes);
+
 app.get("*", (req, res) => {
   res.json("Page introuvable");
 });
